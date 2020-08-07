@@ -1,0 +1,28 @@
+<div class="main-content page-m">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h2>Log In</h2>
+        <p>Please login to continue</p>
+        <div>
+          <label class="full-width-input">
+            Email :
+            <input type="text" placeholder="Email" formControlName="email" required>
+          </label>
+        </div>
+        <div>
+          <label class="full-width-input">
+            Password :
+            <input type="password" placeholder="Password" formControlName="password" required>
+          </label>
+        </div>
+        <div>
+          <button class="button" style="background-color: green;">Login</button>
+        </div>
+      </form>
+      <div class="register-link">
+        Not yet registered? <a routerLink="/register">Register Now</a>
+      </div>
+    </div>
+  </div>
+</div>
